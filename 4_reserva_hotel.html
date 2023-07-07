@@ -1,0 +1,32 @@
+<!-- Crie um formulário de reserva de hotel que solicite ao usuário seu nome, data de check-in e data de check-out. Valide os seguintes critérios:
+
+    O nome deve ser preenchido e ter no máximo 50 caracteres.
+    A data de check-in deve ser uma data futura válida.
+    A data de check-out deve ser posterior à data de check-in. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Cadastro para reserva</h1>
+
+    <form method="POST" action="4_validacao_reserva.php" >
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" required>
+        <br><br>
+        <label for="check-in">Data de check-in:</label>
+        <input type="date" name="check-in" required>
+        <br><br>
+        <label for="check-out">Data de check-out:</label>
+        <input type="date" name="check-out" required>
+        <br><br>
+        <input type="submit" value="Reservar">
+
+    </form>
+</body>
+</html>

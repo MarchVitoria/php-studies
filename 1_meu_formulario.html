@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+
+    <form method="post" action="1_processar.php">
+
+        <!-- caixa de texto para inserir dados pessoais -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" placeholder="ex: Fulano de Tal e Etc" size="30" required>        
+        <br/><br/>
+        <label for="endereco">Endereço completo:</label>
+        <input type="text" name="endereco" placeholder="ex: R. Tal, nº x">
+        <br/><br/>
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="ex: seunome@dominiodoemail.com">
+        <br/><br/>
+        <label for="celular">Celular:</label>
+        <input type="text" name="celular" placeholder="ex: (xx) xxxxx-xxxx">
+        <br/><br/><br/>
+
+        <!-- inserindo botões de opção para gênero -->
+        <label for="genero">Selecione seu gênero:</label>                   
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br/><br/><br/>
+    
+        <!-- caixa de seleção: selecione cores    
+        <label for="cores">Selecione as cores:</label>
+        <input type="checkbox" name="cores[]" id="azul" value="azul">
+        <label for="azul">Azul</label>
+        <input type="checkbox" name="cores[]" id="vermelho" valur="vermelho">
+        <label for="vermelho">Vermelho</label>
+        <input type="checkbox" name="cores[]" id="laranja" value="laranja">
+        <label for="laranja">Laranja</label>
+        <input type="checkbox" name="cores[]" id="verde" value="verde">
+        <label for="verde">Verde</label>
+        <br/><br/><br/> -->
+
+        <!-- caixa de verificação com opções de frutas -->
+        <label for="frutas">Selecione as frutas desejadas:</label>
+        <input type="checkbox" name="frutas[]" id="maçã" value="maçã">
+        <label for="maçã">Maçã</label>
+        <input type="checkbox" name="frutas[]" id="banana" valur="banana">
+        <label for="banana">Banana</label>
+        <input type="checkbox" name="frutas[]" id="laranja" value="laranja">
+        <label for="laranja">Laranja</label>
+        <input type="checkbox" name="frutas[]" id="uva" value="uva">
+        <label for="uva">Uva</label>
+        <br/><br/><br/>
+
+        <!-- área de texto livre para deixar um comentário -->
+        <label for="comentarios">Deixe um comentário:</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="200" size="10"></textarea>
+        <br/><br/><br/>
+
+        <!-- caixa de verificação: concordar com termos e condições -->
+        <label for="aceite">Termos e condições:</label>
+        <input type="checkbox" name="aceite[]" id="concordo" value="concordo">
+        <label for="concord">Concordo com os termos e condições.</label>
+        <br/><br/><br/>
+
+        <!-- botao de submissão para enviar o formulário -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

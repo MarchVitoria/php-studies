@@ -1,0 +1,44 @@
+<!--Crie um formulário HTML com os seguintes campos:
+
+    Nome completo (campo de texto)
+    E-mail (campo de texto)
+    Mensagem (área de texto)
+    Botão de envio
+
+Ao enviar o formulário, o script em PHP deve realizar as seguintes ações:
+
+    Verificar se todos os campos foram preenchidos. Caso contrário, exibir uma mensagem de erro.
+    Se todos os campos estiverem preenchidos, armazenar os dados em um arquivo de texto chamado "dados.txt" no seguinte formato:
+    Nome: [nome completo]
+    E-mail: [e-mail]
+    Mensagem: [mensagem]
+    Cada registro de formulário deve ser adicionado como uma nova linha no arquivo "dados.txt".
+    Exibir uma mensagem de sucesso caso os dados sejam armazenados corretamente. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h1>Formulário: </h1>
+    <form method="POST" action="2_processamento.php">
+        
+        <label for="nome">Nome completo: </label>
+        <input type="text" name="nome" placeholder="Ex: Fulano da Silva" required>
+        <br><br><br>
+
+        <label for="email">E-mail: </label>
+        <input type="text" name="email" placeholder="Ex: fulano_silva@algumacoisa.com" required>
+        <br><br><br>
+
+        <label for="mensagem">Mensagem: </label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="37" required></textarea>
+        <br><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

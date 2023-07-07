@@ -1,0 +1,39 @@
+<!-- Crie um formulário de registro que solicite ao usuário um nome, um endereço de e-mail e uma senha.
+    Valide os seguintes critérios:
+
+    O nome deve ter no mínimo 3 caracteres.
+    O endereço de e-mail deve ser válido.
+    A senha deve ter no mínimo 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula e um número. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Cadastro de usuário</h1>
+
+    <form method="POST" action="3_processar_cadastro.php">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="ex: Fulano de Tal" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="ex: fulano_detal@exemplo.com" required>
+        <br>
+        <p>*A senha deve conter no mínimo 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula e um número.</p>
+        <label for="senha">Senha:</label>
+        <input type="senha" name="senha" placeholder="ex: aBcD1@34" required>
+        <br><br>
+        <label for="confsenha">Confirmar senha:</label>
+        <input type="confsenha" name="confsenha" required>
+        <br><br>
+
+        <input type="submit" value="Cadastrar">
+
+    </form>
+</body>
+</html>
